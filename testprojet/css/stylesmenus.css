@@ -1,0 +1,265 @@
+/*GENERAL*/
+
+/* couleur : #9356DC #FF79DA #99E2D0 */
+* {
+    box-sizing: border-box;
+}
+#container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+html,
+body {
+    font-family: Roboto;
+}
+
+
+
+/* /////////////// HEADER ///////////////*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+header img {
+    width: 90%;
+}
+
+#logoheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header figure {
+    width: 100%;
+}
+
+#imagemenus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#imagemenus img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/*/////// MAIN//////*/  
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+#FondMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -10px;
+}
+#Entrees{ 
+    width:98%;
+}
+
+#Platsdispo {
+    width:98%;
+}
+
+#Desserts {
+    width:98%;
+}
+
+#restaurant {
+    
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 1%;
+    font-family: 'Shrikhand', cursive;
+}
+
+.LotRepas {
+    width: 95%;
+}
+
+.Plats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 2px 1px 16px -3px #5f5f5f;
+    flex-wrap: wrap;
+}
+
+.TitreBordure {
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    
+}
+#BoutonRose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
+    width: 73%;
+    border-radius: 30px;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: white;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer img {
+    width: 50%;
+}
+#Fondgrisfoncée {
+    width: 100%;
+    background-color: rgb(72, 72, 72);
+    padding:3%;
+}
+h4 {
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-size: large;
+    
+}
+footer p {
+    color: white;
+}
+footer #Fondgrisfoncée div {
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    margin: 2px;
+}
+.lienimage {
+    display: flex;
+}
+
+/**/
+
+.fa-check {
+    opacity: 0%;
+}
+
+.fa-check:hover {
+    content: "\f00c";
+    background-color: green;
+    width: 100%;
+    height: 100% ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 100%;
+}
+.blocVert:hover {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+}
+
+.DetailsPrix {
+    width: 70%;
+
+}
+
+
+/* <div class="Plats">
+
+/* tablette Version */ 
+
+@media screen and (min-width:820px) and (max-width:3056px) { 
+    .Plats { 
+        width: 70%;
+
+        
+    }
+
+    #Entrees {
+        display: flex;
+    }
+
+    #Platsdispo {
+        width: 98%;
+        display: flex;
+    }
+
+    #Desserts {
+        display: flex; 
+    }
+
+    #BoutonRose {
+        width: 40%;
+    }
+    /*animation repas /*/
+
+    .fa-check {
+        opacity: 0%;
+    }
+
+    .fa-check:hover {
+        content: "\f00c";
+        background-color: green;
+        width: 100%;
+        height: 100% ;
+        border-radius: 10px;
+        opacity: 100%;
+    }
+    .blocVert:hover {
+        height: 105%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 40%;
+        
+    }
+    main h3,p {
+        font-size: medium;
+    }
+    .DetailsPrix {
+        width: 70%;
+
+    }
+}
+        
+
+
+
+
