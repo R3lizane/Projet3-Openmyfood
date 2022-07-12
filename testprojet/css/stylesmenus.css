@@ -98,21 +98,50 @@ main {
 h1 {
     margin-left: 1%;
     font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
 }
-
+.coeur {
+        font-size: 25px;
+}
+.fa-regular {
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.fa-solid .plein {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(#FF79DA)), to(var(#9356DC)));
+    background-image: linear-gradient(to bottom, var(#FF79DA ), var(#9356DC));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
 .LotRepas {
     width: 95%;
 }
 
 .Plats {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     border-radius: 20px;
     margin: 2%;
     box-shadow: 2px 1px 16px -3px #5f5f5f;
     flex-wrap: wrap;
+    cursor: pointer;
+    animation: apparition 2s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+    padding-left: 1rem;
 }
 
 .TitreBordure {
@@ -126,7 +155,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
-    width: 73%;
+    width: 45%;
     border-radius: 30px;
     margin-top: 12%;
     margin-bottom: 10%;
@@ -152,6 +181,7 @@ h4 {
     color: white;
     font-family: 'Shrikhand', cursive;
     font-size: large;
+    font-weight: lighter;
     
 }
 footer p {
@@ -169,29 +199,15 @@ footer #Fondgrisfoncée div {
 
 /**/
 
-.fa-check {
-    opacity: 0%;
-}
 
-.fa-check:hover {
-    content: "\f00c";
-    background-color: green;
-    width: 100%;
-    height: 100% ;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    opacity: 100%;
-}
-.blocVert:hover {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    
+.check { 
+background-color: greenyellow;
+    color: white;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    margin-right: -61px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .DetailsPrix {
@@ -259,7 +275,13 @@ footer #Fondgrisfoncée div {
     }
 }
         
-
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #99E2D0;
+} 
 
 
 
