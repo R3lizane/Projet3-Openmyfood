@@ -3,13 +3,10 @@
 * {
     box-sizing: border-box;
 }
-html {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #container {
-    width: 2000px;
+    max-width: 500px;
+    width: 100%;
     margin: auto;
     
 }
@@ -28,8 +25,11 @@ h4 {
 }
 p {
     font-family: Roboto;
+    font-size: large;
 }
-
+h1 {
+    margin-top: -1%;
+}
 
 /* /////////////// HEADER ///////////////*/
 
@@ -39,15 +39,15 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 2000px;
 
     
 }
 
 header figure img {
-    height:50px ;
+    height:40px ;
     display: flex;
     justify-content: center;
+    width: 9rem;
     
     
 }
@@ -56,27 +56,34 @@ header figure img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 90%;
-    background-color: #F2F2F2;
+    height: 40px;
+    width: 100%;
+    background-color:#e8e8e8f7;
     margin-bottom: 1%;
+    border-top: 2px solid #a9a2a2;
 }
 
 input {
     border: 0px solid transparent;
-    background-color: #F2F2F2;
-    margin-left: 1%;
+    background-color:#ecececf7;
+    margin-left: 3%;
+    font-weight: bolder;
+    
+}
+#Button .fa-solid {
+    margin-left: 20px;
+    
 }
 
 #Fondgris { 
-    padding: 20%;
-    width: 90%;
-    height: 400px;
+    padding: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#F2F2F2;
+    background-color: #fbf9f9;
     flex-direction: column;
+    margin-top: -2%;
 }
 #Trouvermenu {
     display: flex;
@@ -91,15 +98,20 @@ input {
     justify-content: center;
     align-items: center;
     background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
-    width: 93%;
+    width: 83%;
     border-radius: 2rem;
-    margin-top: 12%;
+    margin-top: 2%;
     min-height: 3.5rem;
     color: #F2F2F2;
     border: none;
-    box-shadow: 2px 1px 16px -3px #000000;
+    box-shadow: 2px 1px 8px -3px #000000;
     transition:transform(100ms);
     cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+    animation: apparition 2s;
+    animation-fill-mode: backwards;
+    
 }
 #BoutonRose:hover {   
     -webkit-transform: scale(1.02);
@@ -111,9 +123,8 @@ input {
 }
 
 #Fondblanc { 
-    padding: 10%;
     width: 100%;
-    height: 400px;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +134,7 @@ input {
 
 h2 
 {
-    margin-left: 10%;
+    font-size: x-large; 
 }
 #Secondepartie {
     
@@ -134,14 +145,19 @@ h2
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 30px;
+    border-radius: 22px;
     padding: 1%;
     margin-bottom: 8%;
     width: 93%;
-    background-color:#F2F2F2;
-    box-shadow: 2px 1px 16px -3px #5f5f5f;
+    background-color:#fbf9f9;
+    box-shadow: 2px 1px 16px -3px #9b9b9b;
     cursor: pointer;
-    ;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    animation: apparition 2s;
+    animation-fill-mode: backwards;
 }
 .Cartouche:hover {   
 background-color: #f2eafb;
@@ -161,11 +177,14 @@ transform: scale(1.02);
     margin-right: 20px;
     color: white;
     border: none;
+    margin-left: -20px;
 }
 .Cartouche p {
-    margin-left: 20%;
-    font: bold;
+    margin-left: 10%;
+    font-weight: bolder;
 }
+
+
 /* ////////MAIN///////////////*/ 
 main {
     display: flex;
@@ -178,21 +197,21 @@ h2 {
     width: 100%;
 }
 section h2 {
-    margin-left: 15%;
     margin-top: 10%;
 }
 main figure {
-    width: 90%;
-    border:3px solid white;
+    width: 99%;
     border-radius: 15px;
     background-color: white;
     margin: 3%;
-    box-shadow: 2px 1px 16px -3px #5f5f5f;
+    box-shadow: 2px 1px 16px -3px #9c9c9c;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     cursor: pointer;
+    animation: apparition 2s;
+    animation-fill-mode: backwards;
 }
 figure:hover {
     -webkit-transform: scale(1.02);
@@ -214,8 +233,7 @@ main figure img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #F2F2F2;
-    padding: 3%;
+    background-color: #fbf9f9;
     
 }
 
@@ -226,31 +244,37 @@ main figcaption {
     margin: 1%;
     background-color: white;
 }   
-.New { 
+.New {
     content: "Nouveau";
     position: absolute;
     height: 25px;
     width: 80px;
-    background-color: var(--tertiaire);
-    color: #1b6150;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color:#99E2D0;
+    color: rgb(4, 137, 4);
+    right:40px;
+    margin-top: 0.5rem;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    right: 15px;
-    top: 15px;
+    font-weight: bolder;
+    
 }
 #LesRestaurants {
     max-width: 2000px;
+    width: 100%;
 }
 #Secondeparti {
     width: 90%;
 
+}
+.Description {
+    margin-left: 4%;
+    margin-top: -10px;
+    height: 5rem;
+    
+}
+.Description p {
+    margin-top: -10px;
 }
 /*///////Footer////////*/ 
 
@@ -264,7 +288,7 @@ footer img {
     width: 50%;
 }
 #Fondgrisfoncée {
-    width: 90%;
+    width: 100%;
     background-color: rgb(72, 72, 72);
     padding:3%;
 }
@@ -284,12 +308,10 @@ footer #Fondgrisfoncée div {
 .lienimage {
     display: flex;
 }
-/* animation /*/ 
-.plein {
-    display: none;
-    opacity: 0%;
+#Restaurateur {
+    width: 100%;
+    margin-left: -15px;
 }
-
 
 
 /* tablette Version */ 
@@ -300,27 +322,72 @@ header {
 }
 
 }
-@media screen and (min-width:750px) and (max-width:1456px) {
-
-    header {
-        width: 60rem;
+@media screen and (min-width:750px) and (max-width:3000px) {
+    header figure img {
+        height:50px ;
+        display: flex;
+        justify-content: center;
+        width: 14rem;
+        
+        
     }
-    main {
-        width: 60rem;
+    button {
+        height: 70px;
     }
+    #Fondblanc {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        background-color: white;
+        }
+    #Restaurateur {
+        display: flex;
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Fondblanc {
+        height: 50%;
+    }
+    .Cartouche {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 30px;
+        padding: 1%;
+        margin-bottom: 8%;
+        width: 93%;
+        background-color: #F2F2F2;
+        box-shadow: 2px 1px 16px -3px #5f5f5f;
+        cursor: pointer;
+        margin: 10px;
 
+    }
+    
+    .New {
+        right:auto}
 }
 
-@media screen and (min-width:1456px) and (max-width:3000px) {
-
-    header {
-        width: 80rem;
+@media screen and (min-width:933px) and (max-width:3000px) {
+    .New {
+        content: "Nouveau";
+        position: absolute;
+        height: 25px;
+        width: 80px;
+        background-color:#99E2D0;
+        color: rgb(4, 137, 4);
+        right:none;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;}
     }
-    main {
-        width: 80rem;
-    }
-
-}
 
 /* loader */ 
     .loader {
@@ -374,30 +441,48 @@ header {
             -o-transform: scale(0);
 }
 }
+/* animation apparition */ 
+
+@keyframes apparition {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+}
 
     /*coeur animation/*/ 
     .far {
         left: 10px;
+        margin-right: -4px;
 
     }
-    .fas {
-        
-    }
-    .fas:hover {
-        color: transparent;
-        background-image: linear-gradient(rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
+    
+    .plein {
+        background: linear-gradient(rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
         background-clip: text;
         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        margin-left: -16px; 
     }
-    .far:hover {
-        color: transparent;
-        background-image: linear-gradient(rgba(147, 86, 220, 0.9 ), rgba(255, 121, 218, 0.9));
-        background-clip: text;
-        -webkit-background-clip: text;
+    .coeur:hover .plein {
+        opacity: 1;
+
     }
     
     
     
+
     
     
     
